@@ -14,7 +14,7 @@ def banner():
                 
 def main():
 	site = input ("\n Enter site list::> ")
-	shell = 'slot88' #yourshell.php
+	shell = 'slot88.php' #yourshell.php
 	opened = open(site)
 	for x in opened:
 		x = x.strip()
